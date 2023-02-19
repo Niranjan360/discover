@@ -52,7 +52,7 @@ nav img{
 .searchbar button i{
   font-size: 25px;
 }  
-nav>i{
+nav>a i{
   color: crimson;
   font-size: 45px;
   animation: 0.5s favs linear infinite alternate ;
@@ -122,7 +122,21 @@ nav>i{
   height: 100%;
   border: none;
 }
+.actions button i{
+  animation: popup 0.2s linear;
+}
+@keyframes popup {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
 .actions button:hover{
   background-color: rgb(212, 212, 212);
   transition: 0.2s;
 }
+
