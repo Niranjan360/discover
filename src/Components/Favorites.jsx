@@ -25,6 +25,10 @@ const Favorites = () => {
         {loading && <ScaleLoader color="crimson" height={55} width={6} className="loader" />}
 
         {data && <Userlist data={data} edited={edited} setEdited={setEdited}/>}
+
+        {data && data.length===0 && <h1> No users in favorites list  </h1>}
+
+
     </div> );
 }
 
